@@ -17,6 +17,80 @@ body {
     font-family: 'Nunito Sans', sans-serif
 }
 
+/*Bending effect start*/
+
+/*Bending effect End*/
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px dashed #ccc;
+    padding: 10px;
+    font-size: 36px; 
+}
+
+.icon img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.icon span {
+    font-size: 16px;
+    padding-top: 10px;
+    color: #000;
+}
+
+
+#mainPhoto{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+
+.imgCarousel{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.imgCarousel:hover{
+    width: 105px;
+    height: 105px;
+    border: 2px solid #272626;
+    border-radius: 1px;
+    margin: 3px;
+    object-fit: cover;
+}
+/*
+img {
+    border-style: none
+
+}
+*/
+
+img {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.box:hover{
+    cursor: pointer;
+}
+
 article,
 aside,
 details,
@@ -109,9 +183,7 @@ audio:not([controls]) {
     height: 0
 }
 
-img {
-    border-style: none
-}
+
 
 svg:not(:root) {
     overflow: hidden
@@ -4895,13 +4967,12 @@ a img {
 }
 
 .header-links .link {
-    color: #1488CC;
     text-decoration: none;
     font-size: 15px;
     margin: 10px;
-
-    border: 2px solid #1488CC;
-    border-radius: 10px;
+    color: #fff;
+    border: 2px solid #cfcfcf;
+    border-radius: 1px;
     transition: all .7s;
     padding: 10px;
 }
@@ -5140,3 +5211,35 @@ a img {
     margin: 0;
     color: #fff
 }
+
+
+
+
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 410px;
+    background-color: white;
+  }
+  
+  .text {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .red {
+    background-color: #3b3b3b;
+  }
+  
+  .green {
+    background-color: #999595;
+  }
+  
