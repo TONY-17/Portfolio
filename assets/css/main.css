@@ -4963,7 +4963,9 @@ a img {
 .header-links .link:active,
 .header-links .link:hover{
     color: #fff;
-    background: #1488CC
+    background: -webkit-linear-gradient(to right, #414141, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414141, #000000);
 }
 
 .header-links .link {
@@ -5057,7 +5059,17 @@ a img {
 #about {
     width: 90%;
     margin: 0 auto;
-    max-width: 960px
+    max-width: 960px;
+
+
+
+
+    
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414141, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414141, #000000);
 }
 
 @media only screen and (min-width:550px) {
@@ -5243,3 +5255,8 @@ a img {
     background-color: #999595;
   }
   
+
+  .text i {
+  margin-right: 10px;
+  font-size: 36px;
+}
